@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4585B4C-0314-4C3C-8CAF-22545A044C0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>iniProjectSebenarnya</RootNamespace>
+    <AssemblyName>iniProjectSebenarnya</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Oracle.DataAccess, Version=2.122.18.3, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\app\calvi\product\18.0.0\dbhomeXE\ODP.NET\bin\4\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminLaporanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLaporanForm.Designer.cs">
+      <DependentUpon>AdminLaporanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMasterBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMasterBarang.Designer.cs">
+      <DependentUpon>AdminMasterBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMasterKaryawanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMasterKaryawanForm.Designer.cs">
+      <DependentUpon>AdminMasterKaryawanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMasterSupplierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMasterSupplierForm.Designer.cs">
+      <DependentUpon>AdminMasterSupplierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReportBarang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportEdward.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportEdward.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportPembayaran.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPembayaran.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportPembelian.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportPembelian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetLaporan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetLaporan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdminI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminI.Designer.cs">
+      <DependentUpon>FormAdminI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertPembelian.Designer.cs">
+      <DependentUpon>FormInsertPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertRetur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertRetur.Designer.cs">
+      <DependentUpon>FormInsertRetur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembayaran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembayaran.Designer.cs">
+      <DependentUpon>FormPembayaran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembelian.Designer.cs">
+      <DependentUpon>FormPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRetur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRetur.Designer.cs">
+      <DependentUpon>FormRetur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JatuhTempoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JatuhTempoForm.Designer.cs">
+      <DependentUpon>JatuhTempoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPembelian.Designer.cs">
+      <DependentUpon>MDIPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PenggantiPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PenggantiPembelian.Designer.cs">
+      <DependentUpon>PenggantiPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogin.Designer.cs">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminLaporanForm.resx">
+      <DependentUpon>AdminLaporanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMasterBarang.resx">
+      <DependentUpon>AdminMasterBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMasterKaryawanForm.resx">
+      <DependentUpon>AdminMasterKaryawanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMasterSupplierForm.resx">
+      <DependentUpon>AdminMasterSupplierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportBarang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportEdward.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportEdward.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPembayaran.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPembayaran.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportPembelian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportPembelian.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdminI.resx">
+      <DependentUpon>FormAdminI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertPembelian.resx">
+      <DependentUpon>FormInsertPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertRetur.resx">
+      <DependentUpon>FormInsertRetur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembayaran.resx">
+      <DependentUpon>FormPembayaran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPembelian.resx">
+      <DependentUpon>FormPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRetur.resx">
+      <DependentUpon>FormRetur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JatuhTempoForm.resx">
+      <DependentUpon>JatuhTempoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPembelian.resx">
+      <DependentUpon>MDIPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PenggantiPembelian.resx">
+      <DependentUpon>PenggantiPembelian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserLogin.resx">
+      <DependentUpon>UserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSetLaporan.xsc">
+      <DependentUpon>DataSetLaporan.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetLaporan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetLaporan.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetLaporan.xss">
+      <DependentUpon>DataSetLaporan.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\username.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackInter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-id.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4654704.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3885079.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38850791.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46547041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2900216.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2983723.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1508964.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29002161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15089641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29837231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29002162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\46547042.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38850792.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\482541.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5611562.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4825411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4825412.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_W1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_W1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_W2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine-learning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\machine-learning1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
